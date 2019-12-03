@@ -1,6 +1,6 @@
 다른유저로 install 쉘을실행 
 ```
-user runuser -l ec2-user -c /path/to/below/scripte.sh
+user runuser -l ec2-user -c /absolute/path/to/below/scripte.sh
 ``` 
 
 ```
@@ -14,7 +14,7 @@ sudo yum install curl
 
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 
-# 'EOF'는 here-document 스펙으로 cat ~ EOF내 명령들을 litter로 다룬다.
+# 'EOF'는 here-document 스펙으로 cat ~ EOF내 명령들을 literal로 다룬다.
 cat <<'EOF' >> ~/.bashrc
   export PATH="/home/ec2-user/.pyenv/bin:$PATH"
   eval "$(pyenv init -)"
